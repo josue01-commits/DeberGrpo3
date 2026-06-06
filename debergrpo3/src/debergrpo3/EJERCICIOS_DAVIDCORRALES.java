@@ -57,6 +57,7 @@ public static void ejercicio1(){
 public static void ejercicio2(){
     Scanner sc = new Scanner(System.in);
     int sumT=0;
+    int numT=0;
     while (true){
         System.out.println("INGRESE NUMEROS: ");
         int num =sc.nextInt();
@@ -64,11 +65,11 @@ public static void ejercicio2(){
             System.out.println("NUMERO NEGATIVO");
             break;
         }
-           
-        
         sumT += num; 
+        numT++;
     }
-    System.out.println(""+sumT); 
+    System.out.println(""+sumT);
+    System.out.println(""+numT);
 }
                
 }
