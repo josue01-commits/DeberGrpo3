@@ -25,9 +25,7 @@ public class EJERCICIOS_DAVIDCORRALES {
        
     }
     
-    public static void ejercicio1Contraseña(){
-    
-
+public static void ejercicio1(){
         Scanner sc=new Scanner(System.in);
          // Declaración de la clave maestra fija mediante una constante String que no cambiará
         final String clave= "ADminUNO";
@@ -47,11 +45,16 @@ public class EJERCICIOS_DAVIDCORRALES {
                 System.out.println("===============================");
                 System.out.println("CONTRASENA CORRECTA. "+"\nINTENTOS REALIZADOS: "+intentos);
                 System.out.println("===============================");
-                break;
-                
+                break;     
             }
     //mensaje si las contraseñas no son iguales
             System.out.println("--Contrasena incorrecta.Intente de nuevo.\n");
         }
     }
+
+public static void ejercicio2(){
+    
+    
+}
+   
 }
