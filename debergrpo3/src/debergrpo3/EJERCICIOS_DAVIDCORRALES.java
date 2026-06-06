@@ -10,13 +10,14 @@ public class EJERCICIOS_DAVIDCORRALES {
     while(true){
        
         System.out.println("""
-        =========================
+        \n=========================
             MENU DE EJERCICIOS
         -------------------------
         1.-EJERCICIO 1
         2.-EJERCICIO 2
         3.-EJERCICIO 3
         4.-EJERCICIO 4
+        5.-Salir
         -------------------------""");
         System.out.print("OPCION: ");
         int opcion =sc.nextInt();
@@ -29,6 +30,10 @@ public class EJERCICIOS_DAVIDCORRALES {
             case 3:System.out.println("\n"); ejercicio3();
             break;
             case 4:System.out.println("\n"); ejercicio4();
+            case 5: break;
+            default:
+                    System.out.println("Opción inválida.\n");
+                    break;
             
         }
     }
@@ -114,7 +119,6 @@ public static void ejercicio3(){
 }
 
 public static void ejercicio4(){
-    sc.nextLine(); 
     
     final String clave = "9555";
         System.out.println("""
@@ -131,7 +135,9 @@ public static void ejercicio4(){
     if (pinIngresado.length() != 4) {
      
         System.out.println("""
-        \nEl PIN no tiene 4 numeros""");
+        =====================================
+        
+        El PIN no tiene 4 numeros""");
     }
      if (pinIngresado.equals(clave)) {
         System.out.println("""
@@ -142,17 +148,17 @@ public static void ejercicio4(){
    
     }else if (i==3){
         System.out.print("""
-         \n==================================
+        =====================================   
         ACCESO BLOQUEADO
-        Maximo de intentos alcanzado.
-        ==================================""");
+        Maximo de intentos alcanzado.               
+        -------------------------------------\n""");
         
     }else {
         System.out.println("""
         -------------------------------------
         PIN Incorrecto Vuelva a Intentar
-        INTENTOS RESTANTES: """+(3-i)+"""
-                                      
+        INTENTOS RESTANTES: """+(3-i)+"""   
+                                                         
         -------------------------------------""");
          
       }
