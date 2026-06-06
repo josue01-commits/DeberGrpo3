@@ -2,10 +2,16 @@
 package debergrpo3;
 import java.util.Scanner;
 
-public class EJERCICIO1_CONTRASEÑA {
+public class EJERCICIOS_DAVIDCORRALES {
 
 
     public static void main(String[] args) {
+        ejercicio1Contraseña();
+    }
+    
+    public static void ejercicio1Contraseña(){
+    
+
         Scanner sc=new Scanner(System.in);
          // Declaración de la clave maestra fija mediante una constante String que no cambiará
         final String clave= "ADminUNO";
@@ -29,9 +35,7 @@ public class EJERCICIO1_CONTRASEÑA {
                 
             }
     //mensaje si las contraseñas no son iguales
-            System.out.println("--Contrasena incorrecta, intente de nuevo.L\n");
+            System.out.println("--Contrasena incorrecta, intente de nuevo.\n");
         }
-        
     }
-    
 }
