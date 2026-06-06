@@ -56,19 +56,19 @@ public static void ejercicio1(){
 
 public static void ejercicio2(){
     Scanner sc = new Scanner(System.in);
+    int sumT=0;
     while (true){
         System.out.println("INGRESE NUMEROS: ");
         int num =sc.nextInt();
         if (num<0) {
             System.out.println("NUMERO NEGATIVO");
             break;
-            
         }
+           
         
-        
-        
+        sumT += num; 
     }
-    
+    System.out.println(""+sumT); 
 }
-   
+               
 }
