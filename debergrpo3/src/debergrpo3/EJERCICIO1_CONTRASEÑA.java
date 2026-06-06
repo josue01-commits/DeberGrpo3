@@ -9,15 +9,22 @@ public class EJERCICIO1_CONTRASEÑA {
         Scanner sc=new Scanner(System.in);
         final String clave= "ADminUNO";
         int intentos =0;
-        System.out.println("========================="); 
-        System.out.println("ADIVINAR CONTRASEÑA");
-        System.out.println("=========================");
-        System.out.println("INGRESE LA CONTRASEÑA ");
+        System.out.println("===============================");
+        System.out.println("ADIVINAR CONTRASENA");
+        System.out.println("===============================");
+        
+        while(true){
+        System.out.print("INGRESE LA CONTRASENA: ");
         String contraTemporal=sc.nextLine();
-        for (;;) {
-            System.out.println("hola");
             intentos++;
-        if contraTemporal
+            if ( contraTemporal.equals(clave)) {
+                System.out.println("===============================");
+                System.out.println("CONTRASENA CORRECTA. "+"\nINTENTOS REALIZADOS: "+intentos);
+                System.out.println("===============================");
+                break;
+                
+            }
+            System.out.println("--Contrasena incorrecta, intente de nuevo.\n");
         }
         
     }
