@@ -121,7 +121,13 @@ public static void ejercicio4(){
      System.out.print("\nDigite su PIN (4 numeros): ");
     String pinIngresado = sc.nextLine();
     
-    if (pinIngresado.equals(clave)) {
+    if (pinIngresado.length() != 4) {
+     
+        System.out.println("El PIN ingresado\nno tiene 4 numeros");
+        i--;
+        continue;
+    }
+     if (pinIngresado.equals(clave)) {
         System.out.println("""
         \n-------------------------------------
             BIENVENIDO/A
@@ -134,6 +140,7 @@ public static void ejercicio4(){
         ACCESO BLOQUEADO
         Maximo de intentos alcanzado.
         ==================================""");
+        
     }else {
         System.out.println("""
         PIN Incorrecto Vuelva a Intentar
