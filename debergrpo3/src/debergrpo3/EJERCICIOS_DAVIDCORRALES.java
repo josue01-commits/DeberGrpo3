@@ -92,12 +92,17 @@ public static void ejercicio3(){
     ----------------------
      VALICACION DE NOTAS 
     ----------------------""");  
-    System.out.print("INGRESE UNA NOTA (0-10): ");
+    while(true){
+        
+       System.out.print("INGRESE UNA NOTA (0-10): ");
     double nota=sc.nextDouble();
-    if (nota<0 || nota >10) {
-        System.out.println("Nota INVALIDA");
+  
+    if (nota>0 && nota <10) {
+        System.out.println("Nota VALIDA");
+        break;
         
     }
+   }
     
 }
 }
