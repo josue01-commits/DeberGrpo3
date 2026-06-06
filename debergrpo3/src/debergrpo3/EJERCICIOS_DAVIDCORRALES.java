@@ -3,10 +3,10 @@ package debergrpo3;
 import java.util.Scanner;
 
 public class EJERCICIOS_DAVIDCORRALES {
-
+ static Scanner sc = new Scanner(System.in);
+ static final String PIN = "9555";
 
     public static void main(String[] args) {
-     Scanner sc=new Scanner(System.in);
         System.out.println("""
         =========================
             MENU DE EJERCICIOS
@@ -22,7 +22,7 @@ public class EJERCICIOS_DAVIDCORRALES {
             case 1:System.out.println("\n"); ejercicio1();
             case 2:System.out.println("\n"); ejercicio2();
             case 3:System.out.println("\n"); ejercicio3();
-            case 3:System.out.println("\n"); ejercicio4();
+            case 4:System.out.println("\n"); ejercicio4();
             
         }
         
@@ -30,7 +30,6 @@ public class EJERCICIOS_DAVIDCORRALES {
     }
     
 public static void ejercicio1(){
-        Scanner sc=new Scanner(System.in);
          // Declaración de la clave maestra fija mediante una constante String que no cambiará
         final String clave= "ADminUNO";
          // Variable acumuladora encargada de registrar el número de intentos del usuario
@@ -57,7 +56,6 @@ public static void ejercicio1(){
     }
 
 public static void ejercicio2(){
-    Scanner sc = new Scanner(System.in);
     int sumT=0;
     int numT=0;
     int promedio=0;
@@ -88,7 +86,6 @@ public static void ejercicio2(){
 }
 
 public static void ejercicio3(){
-    Scanner sc=new Scanner(System.in);
     System.out.println("""
     ----------------------------------------------------
          V A L I D A C I O N   D E   N O T A S 
@@ -109,6 +106,10 @@ public static void ejercicio3(){
    }   
 }
 public static void ejercicio4(){
-    
+    System.out.println("""
+    -------------------------------------
+     C A J E R O   A U T O M A T I C O 
+    -------------------------------------""");
+    System.out.println("Digite su PIN (4 números)");//Pin=955
 }
 }
