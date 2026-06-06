@@ -7,24 +7,31 @@ public class EJERCICIOS_DAVIDCORRALES {
 
 
     public static void main(String[] args) {
+    while(true){
+       
         System.out.println("""
         =========================
             MENU DE EJERCICIOS
         -------------------------
-        1.-EJERCICIO 1(contrasena)
+        1.-EJERCICIO 1
         2.-EJERCICIO 2
         3.-EJERCICIO 3
         4.-EJERCICIO 4
         -------------------------""");
         System.out.print("OPCION: ");
         int opcion =sc.nextInt();
+         sc.nextLine();
         switch (opcion){
             case 1:System.out.println("\n"); ejercicio1();
+            break;
             case 2:System.out.println("\n"); ejercicio2();
+            break;
             case 3:System.out.println("\n"); ejercicio3();
+            break;
             case 4:System.out.println("\n"); ejercicio4();
             
         }
+    }
         
        
     }
