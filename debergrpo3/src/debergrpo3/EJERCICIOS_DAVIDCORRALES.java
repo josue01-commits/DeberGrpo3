@@ -89,21 +89,22 @@ public static void ejercicio2(){
 public static void ejercicio3(){
     Scanner sc=new Scanner(System.in);
     System.out.println("""
-    ----------------------
-     VALICACION DE NOTAS 
-    ----------------------""");  
+    ----------------------------------------------------
+         V A L I D A C I O N   D E   N O T A S 
+    ----------------------------------------------------
+    NOTA: digite las notas dentro del rango. 
+    ----------------------------------------------------\n""");  
     while(true){
         
-    System.out.print("INGRESE UNA NOTA (0-10): ");
+    System.out.print("->DIGITE NOTA (0-10): ");
     double nota=sc.nextDouble();
   
-    if (nota>0 && nota <10) {
-        System.out.println("NOTA VALIDA: "+nota);
-        break;
-        
+    if (nota>=0.0 && nota <=10.0) {
+        System.out.println("\n----------------------------------------------------\n"+
+    "NOTA VALIDA : "+nota+" REGISTRADA\n----------------------------------------------------");
+    break;     
     }
-        System.out.println("NOTA INVALIDA.Vuelva a Ingresar.");
-   }
-    
+        System.out.println("!ERROR!.NOTA fuera de rango.Vuelva a ingresar.\n");
+   }   
 }
 }
