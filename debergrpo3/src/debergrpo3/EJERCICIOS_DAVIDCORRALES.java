@@ -22,6 +22,7 @@ public class EJERCICIOS_DAVIDCORRALES {
             case 1:System.out.println("\n"); ejercicio1();
             case 2:System.out.println("\n"); ejercicio2();
             case 3:System.out.println("\n"); ejercicio3();
+            case 3:System.out.println("\n"); ejercicio4();
             
         }
         
@@ -106,5 +107,8 @@ public static void ejercicio3(){
     }
         System.out.println("!ERROR!.NOTA fuera de rango.Vuelva a ingresar.\n");
    }   
+}
+public static void ejercicio4(){
+    
 }
 }
