@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class EJERCICIOS_DAVIDCORRALES {
  static Scanner sc = new Scanner(System.in);
- static final String PIN = "9555";
+
 
     public static void main(String[] args) {
         System.out.println("""
@@ -105,11 +105,23 @@ public static void ejercicio3(){
         System.out.println("!ERROR!.NOTA fuera de rango.Vuelva a ingresar.\n");
    }   
 }
+
 public static void ejercicio4(){
-    System.out.println("""
+    sc.nextLine(); 
+    final String clave = "9555";
+        System.out.println("""
     -------------------------------------
      C A J E R O   A U T O M A T I C O 
     -------------------------------------""");
-    System.out.println("Digite su PIN (4 números)");//Pin=955
+    
+    for (int i = 0; i < 3; i++) {
+     System.out.println("Digite su PIN (4 numeros)");//Pin=955
+    
+    
+    String pinIngresado = sc.nextLine();
+    }
+
+   
+
 }
 }
