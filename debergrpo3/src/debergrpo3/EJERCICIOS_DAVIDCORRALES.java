@@ -6,6 +6,7 @@ public class EJERCICIOS_DAVIDCORRALES {
 
 
     public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);
         System.out.println("""
         =========================
             MENU DE EJERCICIOS
@@ -13,8 +14,15 @@ public class EJERCICIOS_DAVIDCORRALES {
         1.-EJERCICIO 1(contrasena)
         2.-EJERCICIO 2
         3.-EJERCICIO 3
-        4.-EJERCICIO 4""");
-        ejercicio1Contraseña();
+        4.-EJERCICIO 4
+        -------------------------
+        OPCION:""");
+        int opcion =sc.nextInt();
+        switch (opcion){
+            case 1:System.out.println("\n"); ejercicio1Contraseña();
+        }
+        
+       
     }
     
     public static void ejercicio1Contraseña(){
@@ -43,7 +51,7 @@ public class EJERCICIOS_DAVIDCORRALES {
                 
             }
     //mensaje si las contraseñas no son iguales
-            System.out.println("--Contrasena incorrecta, intente de nuevo.\n");
+            System.out.println("--Contrasena incorrecta.Intente de nuevo.\n");
         }
     }
 }
