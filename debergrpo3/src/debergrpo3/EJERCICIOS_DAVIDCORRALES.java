@@ -59,22 +59,30 @@ public static void ejercicio2(){
     int sumT=0;
     int numT=0;
     int promedio=0;
+    System.out.println("-------------------------------");
+    System.out.println("PROCESADOR DE NUMEROS ENTEROS");
+    System.out.println("-------------------------------");
+    System.out.println("Nota:Cualquier numero negativo\ningresado terminara el proceso.");
+    System.out.println("-------------------------------");
     while (true){
-        System.out.print("INGRESE NUMEROS: ");
+        System.out.print("INGRESE UN NUMERO: ");
         int num =sc.nextInt();
         if (num<0) {
-            System.out.println("NUMERO NEGATIVO");
+            System.out.println("--------------------------");
+            System.out.print("Fin del proceso.\nNegativo detectado: (" + num +")\n");
             break;
         }
         sumT += num; 
         numT++;
         promedio=sumT/numT;
     }
-    System.out.println("---------------------------------------");
-    System.out.println("SUMA TOTAL: "+sumT);
-    System.out.println("TOTAL DE NUMEROS INGRESADOS: "+numT);
-    System.out.println("PROMEDIO: "+promedio);
-    System.out.println("---------------------------------------");
+    System.out.println("--------------------------");
+    System.out.println("R E P O R T E");
+    System.out.println("--------------------------");
+    System.out.println("SUMA TOTAL:\t"+sumT);
+    System.out.println("Cant.NUMEROS:\t"+numT);
+    System.out.println("PROMEDIO:\t"+promedio);
+    System.out.println("--------------------------");
 }
                
 }
