@@ -58,8 +58,9 @@ public static void ejercicio2(){
     Scanner sc = new Scanner(System.in);
     int sumT=0;
     int numT=0;
+    int promedio=0;
     while (true){
-        System.out.println("INGRESE NUMEROS: ");
+        System.out.print("INGRESE NUMEROS: ");
         int num =sc.nextInt();
         if (num<0) {
             System.out.println("NUMERO NEGATIVO");
@@ -67,9 +68,11 @@ public static void ejercicio2(){
         }
         sumT += num; 
         numT++;
+        promedio=sumT/numT;
     }
     System.out.println(""+sumT);
     System.out.println(""+numT);
+    System.out.println(""+promedio);
 }
                
 }
