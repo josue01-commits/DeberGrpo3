@@ -59,6 +59,11 @@ public static void ejercicio2(){
     while (true){
         System.out.println("INGRESE NUMEROS: ");
         int num =sc.nextInt();
+        if (num<0) {
+            System.out.println("NUMERO NEGATIVO");
+            break;
+            
+        }
         
         
         
