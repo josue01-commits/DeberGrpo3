@@ -111,33 +111,37 @@ public static void ejercicio4(){
     
     final String clave = "9555";
         System.out.println("""
-    -------------------------------------
+    =====================================
      C A J E R O   A U T O M A T I C O 
     -------------------------------------
     NOTA: Dispone de 3 intentos
-    -------------------------------------""");
+    =====================================""");
     
     for (int i = 1; i <= 3; i++) {
-     System.out.println("\nDigite su PIN (4 numeros)");
+     System.out.print("\nDigite su PIN (4 numeros): ");
     String pinIngresado = sc.nextLine();
     
     if (pinIngresado.equals(clave)) {
         System.out.println("""
-        -------------------------------------
+        \n-------------------------------------
             BIENVENIDO/A
         -------------------------------------""");
         break;
    
     }else if (i==3){
-        System.out.println("""
-         -------------------------------------
-           ACCESO BLOQUEADO
-           Maximo de intentos alcanzado.
-        -------------------------------------""");
-    }
+        System.out.print("""
+         \n==================================
+        ACCESO BLOQUEADO
+        Maximo de intentos alcanzado.
+        ==================================""");
+    }else {
         System.out.println("""
         PIN Incorrecto Vuelva a Intentar
-        INTENTOS RESTANTES: """+(3-i));
+        INTENTOS RESTANTES: """+(3-i)+"""
+                                      
+        -------------------------------------""");
+         
+      }
     }
    
 
