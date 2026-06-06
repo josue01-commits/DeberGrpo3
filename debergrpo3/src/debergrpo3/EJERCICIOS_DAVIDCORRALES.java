@@ -59,7 +59,7 @@ public static void ejercicio1(){
             if ( contraTemporal.equals(clave)) {
                 System.out.println("===============================");
                 System.out.println("CONTRASENA CORRECTA. "+"\nINTENTOS REALIZADOS: "+intentos);
-                System.out.println("===============================");
+                System.out.println("--------------------------------");
                 break;     
             }
     //mensaje si las contraseñas no son iguales
@@ -71,11 +71,11 @@ public static void ejercicio2(){
     int sumT=0;
     int numT=0;
     int promedio=0;
-    System.out.println("-------------------------------");
+    System.out.println("================================");
     System.out.println("PROCESADOR DE NUMEROS ENTEROS");
     System.out.println("-------------------------------");
     System.out.println("Nota:Cualquier numero negativo\ningresado terminara el proceso.");
-    System.out.println("-------------------------------");
+    System.out.println("================================\n");
     while (true){
         System.out.print("INGRESE El NUMERO "+(numT+1)+": ");
         int num =sc.nextInt();
@@ -88,9 +88,9 @@ public static void ejercicio2(){
         numT++;
         promedio=sumT/numT;
     }
-    System.out.println("-------------------------------");
+    System.out.println("===============================");
     System.out.println("R E P O R T E");
-    System.out.println("-------------------------------");
+    System.out.println("===============================");
     System.out.println("SUMA TOTAL:\t"+sumT);
     System.out.println("Cant.NUMEROS:\t"+numT);
     System.out.println("PROMEDIO:\t"+promedio);
