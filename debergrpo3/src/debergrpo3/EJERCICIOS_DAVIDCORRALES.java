@@ -70,9 +70,11 @@ public static void ejercicio2(){
         numT++;
         promedio=sumT/numT;
     }
-    System.out.println(""+sumT);
-    System.out.println(""+numT);
-    System.out.println(""+promedio);
+    System.out.println("---------------------------------------");
+    System.out.println("SUMA TOTAL: "+sumT);
+    System.out.println("TOTAL DE NUMEROS INGRESADOS: "+numT);
+    System.out.println("PROMEDIO: "+promedio);
+    System.out.println("---------------------------------------");
 }
                
 }
