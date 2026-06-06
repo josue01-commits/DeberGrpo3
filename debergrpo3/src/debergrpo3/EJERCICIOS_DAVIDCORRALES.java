@@ -15,12 +15,13 @@ public class EJERCICIOS_DAVIDCORRALES {
         2.-EJERCICIO 2
         3.-EJERCICIO 3
         4.-EJERCICIO 4
-        -------------------------
-        OPCION:""");
+        -------------------------""");
+        System.out.print("OPCION: ");
         int opcion =sc.nextInt();
         switch (opcion){
             case 1:System.out.println("\n"); ejercicio1();
             case 2:System.out.println("\n"); ejercicio2();
+            case 3:System.out.println("\n"); ejercicio3();
             
         }
         
@@ -65,10 +66,10 @@ public static void ejercicio2(){
     System.out.println("Nota:Cualquier numero negativo\ningresado terminara el proceso.");
     System.out.println("-------------------------------");
     while (true){
-        System.out.print("INGRESE UN NUMERO: ");
+        System.out.print("INGRESE El NUMERO "+(numT+1)+": ");
         int num =sc.nextInt();
         if (num<0) {
-            System.out.println("--------------------------");
+    System.out.println("-------------------------------");
             System.out.print("Fin del proceso.\nNegativo detectado: (" + num +")\n");
             break;
         }
@@ -76,13 +77,16 @@ public static void ejercicio2(){
         numT++;
         promedio=sumT/numT;
     }
-    System.out.println("--------------------------");
+    System.out.println("-------------------------------");
     System.out.println("R E P O R T E");
-    System.out.println("--------------------------");
+    System.out.println("-------------------------------");
     System.out.println("SUMA TOTAL:\t"+sumT);
     System.out.println("Cant.NUMEROS:\t"+numT);
     System.out.println("PROMEDIO:\t"+promedio);
-    System.out.println("--------------------------");
+    System.out.println("-------------------------------");
 }
-               
+
+public static void ejercicio3(){
+    
+}
 }
