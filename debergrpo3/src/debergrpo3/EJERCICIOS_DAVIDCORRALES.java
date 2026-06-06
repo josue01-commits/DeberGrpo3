@@ -87,6 +87,13 @@ public static void ejercicio2(){
 }
 
 public static void ejercicio3(){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("""
+    ----------------------
+     VALICACION DE NOTAS 
+    ----------------------""");  
+    System.out.println("INGRESE UNA NOTA ");
+    double nota=sc.nextDouble();
     
 }
 }
