@@ -94,14 +94,15 @@ public static void ejercicio3(){
     ----------------------""");  
     while(true){
         
-       System.out.print("INGRESE UNA NOTA (0-10): ");
+    System.out.print("INGRESE UNA NOTA (0-10): ");
     double nota=sc.nextDouble();
   
     if (nota>0 && nota <10) {
-        System.out.println("Nota VALIDA");
+        System.out.println("NOTA VALIDA: "+nota);
         break;
         
     }
+        System.out.println("NOTA INVALIDA.Vuelva a Ingresar.");
    }
     
 }
