@@ -19,7 +19,9 @@ public class EJERCICIOS_DAVIDCORRALES {
         OPCION:""");
         int opcion =sc.nextInt();
         switch (opcion){
-            case 1:System.out.println("\n"); ejercicio1Contraseña();
+            case 1:System.out.println("\n"); ejercicio1();
+            case 2:System.out.println("\n"); ejercicio2();
+            
         }
         
        
@@ -53,7 +55,14 @@ public static void ejercicio1(){
     }
 
 public static void ejercicio2(){
-    
+    Scanner sc = new Scanner(System.in);
+    while (true){
+        System.out.println("INGRESE NUMEROS: ");
+        int num =sc.nextInt();
+        
+        
+        
+    }
     
 }
    
