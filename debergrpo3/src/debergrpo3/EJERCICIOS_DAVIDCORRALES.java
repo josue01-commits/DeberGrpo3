@@ -92,8 +92,12 @@ public static void ejercicio3(){
     ----------------------
      VALICACION DE NOTAS 
     ----------------------""");  
-    System.out.println("INGRESE UNA NOTA ");
+    System.out.print("INGRESE UNA NOTA (0-10): ");
     double nota=sc.nextDouble();
+    if (nota<0 || nota >10) {
+        System.out.println("Nota INVALIDA");
+        
+    }
     
 }
 }
