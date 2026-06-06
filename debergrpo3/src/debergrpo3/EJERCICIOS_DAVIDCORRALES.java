@@ -115,12 +115,13 @@ public static void ejercicio4(){
     -------------------------------------""");
     
     for (int i = 0; i < 3; i++) {
-     System.out.println("Digite su PIN (4 numeros)");//Pin=955
-    
-    
+     System.out.println("Digite su PIN (4 numeros)");
     String pinIngresado = sc.nextLine();
+    
+    if (pinIngresado.equals(clave)) {
+        System.out.println("");
+     }   
     }
-
    
 
 }
