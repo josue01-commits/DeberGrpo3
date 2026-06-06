@@ -123,9 +123,8 @@ public static void ejercicio4(){
     
     if (pinIngresado.length() != 4) {
      
-        System.out.println("El PIN ingresado\nno tiene 4 numeros");
-        i--;
-        continue;
+        System.out.println("""
+        \nEl PIN no tiene 4 numeros""");
     }
      if (pinIngresado.equals(clave)) {
         System.out.println("""
@@ -143,6 +142,7 @@ public static void ejercicio4(){
         
     }else {
         System.out.println("""
+        -------------------------------------
         PIN Incorrecto Vuelva a Intentar
         INTENTOS RESTANTES: """+(3-i)+"""
                                       
