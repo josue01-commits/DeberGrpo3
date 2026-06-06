@@ -6,6 +6,14 @@ public class EJERCICIOS_DAVIDCORRALES {
 
 
     public static void main(String[] args) {
+        System.out.println("""
+        =========================
+            MENU DE EJERCICIOS
+        -------------------------
+        1.-EJERCICIO 1(contrasena)
+        2.-EJERCICIO 2
+        3.-EJERCICIO 3
+        4.-EJERCICIO 4""");
         ejercicio1Contraseña();
     }
     
