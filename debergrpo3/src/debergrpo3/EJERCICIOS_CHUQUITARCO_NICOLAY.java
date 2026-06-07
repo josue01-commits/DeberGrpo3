@@ -6,6 +6,7 @@ import java.util.Scanner;
         static Scanner sc = new Scanner(System.in);
         public static void main(String[] args) {
         ejercicio9();
+        ejercicio10();
 }
 
 public static void ejercicio9(){
@@ -20,21 +21,34 @@ public static void ejercicio9(){
         }
         System.out.println("El factorial de " + numero + " es: " + factorial);
     }
- }
+ 
 
 public static void ejercicio10(){
     //DETRERMINAR CUALES SON POSITIVOS, NEGATIVOS Y CEROS
+    
     System.out.println("===============");
     System.out.println("Que numero es ?"); 
         
         int positivos = 0;
         int negativos = 0;
         int ceros = 0;
-        //cliclo for para ingresar los 15
+
         for (int i = 1; i <= 15; i++) {
-            System.out.print("Ingrese el número " + i + ": ");
+            System.out.print("Número " + i + ": ");
             int numero = sc.nextInt();
+
+            if (numero > 0) {
+                positivos++;
+            } else if (numero < 0) {
+                negativos++;
+            } else {
+                ceros++;
+            }
         }
 
+        System.out.println("Positivos: " + positivos);
+        System.out.println("Negativos: " + negativos);
+        System.out.println("Ceros: " + ceros);
 
+}
 }
