@@ -72,12 +72,10 @@ public static void ejercicio10(){
     //DETRERMINAR CUALES SON POSITIVOS, NEGATIVOS Y CEROS
     System.out.println("===============");
     System.out.println("CONTADOR DE POSITIVOS, NEGATIVOS Y CEROS");
-
     int numero;
     int positivos = 0;
     int negativos = 0;
     int ceros = 0;
-
     for (int i = 1; i <= 15; i++) {
         while (!sc.hasNextInt()) {
             System.out.println("Error: Debe ingresar un numero entero.");
@@ -98,7 +96,6 @@ public static void ejercicio10(){
         System.out.println("Positivos: " + positivos);
         System.out.println("Negativos: " + negativos);
         System.out.println("Ceros: " + ceros);
-
 }
 public static void ejercicio11() {
     // PROMEDIO DE 20 ESTUDIANTES
