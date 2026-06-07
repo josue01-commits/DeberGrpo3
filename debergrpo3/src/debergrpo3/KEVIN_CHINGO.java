@@ -24,6 +24,10 @@ public class KEVIN_CHINGO {
         """);
          System.out.print("Seleccione una opción: ");
          opcion = sc.nextInt();
+         switch(opcion){
+             
+
+}
 
      }while(opcion!=0);
 }  
