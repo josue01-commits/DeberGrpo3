@@ -1,13 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package debergrpo3;
 
-/**
- *
- * @author Nikholov
- */
 public class EJERCICIOS_CHUQUITARCO_NICOLAY {
     
+}
+
+public static void ejercicio9(){
+    Scanner sc = new Scanner(System.in);
+    //FACTORIAL
+    System.out.println("===============");
+    System.out.println("FACTORIAL"); 
+    int numero;
+    long factorial = 1;
+
+        System.out.print("Ingrese un número: ");
+        numero = entrada.nextInt();
+
+
+
 }
