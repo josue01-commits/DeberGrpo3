@@ -119,7 +119,7 @@ public static void ejercicio12() {
         System.out.print("Ingrese la cantidad de terminos: ");
         if (sc.hasNextInt()) {
             n = sc.nextInt();
-            if (n > 0) {
+            if (n > 0) {             
                 break;
             } else {
                 System.out.println("Error: Debe ingresar un numero mayor que 0.");
