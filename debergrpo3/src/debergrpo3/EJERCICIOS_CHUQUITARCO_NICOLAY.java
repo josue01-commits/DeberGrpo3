@@ -7,7 +7,6 @@ import java.util.Scanner;
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-
         int opcion;
         //CREANDO MENU
         do {
@@ -20,9 +19,7 @@ import java.util.Scanner;
             System.out.println("4. Ejercicio 12");
             System.out.println("5. SALIR");
             System.out.print("Seleccione una opcion: ");
-
             opcion = sc.nextInt();
-
             switch (opcion) {
                 case 1:
                     ejercicio9();
