@@ -3,35 +3,56 @@ package debergrpo3;
 import java.util.Scanner;
 
     public class EJERCICIOS_CHUQUITARCO_NICOLAY {
-        static Scanner sc = new Scanner(System.in);
-        public static void main(String[] args) {
-            //creacion de menu
-            int opcion;
-            do{
-                System.out.println("\n==============================");
-                System.out.println("      MENU DE EJERCICIOS");
-                System.out.println("==============================");
-                System.out.println("1. Ejercicio 9");
-                System.out.println("2. Ejercicio 10");
-                System.out.println("3. Ejercicio 11");
-                System.out.println("4. Ejercicio 12");
-                System.out.println("5. SALIR");
-                opcion = sc.nextInt();
-                switch (opcion) {
-                    case 1:
-                        ejercicio9();
+
+    static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int opcion;
+        //CREANDO MENU
+        do {
+            System.out.println("\n==============================");
+            System.out.println("      MENU DE EJERCICIOS");
+            System.out.println("==============================");
+            System.out.println("1. Ejercicio 9");
+            System.out.println("2. Ejercicio 10");
+            System.out.println("3. Ejercicio 11");
+            System.out.println("4. Ejercicio 12");
+            System.out.println("5. SALIR");
+            System.out.print("Seleccione una opcion: ");
+
+            opcion = sc.nextInt();
+
+            switch (opcion) {
+                case 1:
+                    ejercicio9();
                     break;
 
-                }
-                System.out.println("");
+                case 2:
+                    ejercicio10();
+                    break;
+
+                case 3:
+                    ejercicio11();
+                    break;
+
+                case 4:
+                    ejercicio12();
+                    break;
+
+                case 5:
+                    System.out.println("GRACIAS POR USAR EL PROGRAMA");
+                    break;
+
+                default:
+                    System.out.println("Opcion invalida.");
             }
-               
-            
-        //ejercicio9();
-        //ejercicio10();
-        //ejercicio11();
-        //ejercicio12();
-}
+
+        } while (opcion != 5);
+
+        sc.close();
+    }
+
 
 public static void ejercicio9(){
     //FACTORIAL
