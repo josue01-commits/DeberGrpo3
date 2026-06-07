@@ -75,6 +75,12 @@ public static void ejercicio6(){
     do{
         System.out.print("Ingrese una venta (0 para terminar): ");
         venta = sc.nextDouble();
+        if(venta!=0){
+
+        total += venta;
+        contador++;
+
+}
         
         
     }while(venta!=0);
