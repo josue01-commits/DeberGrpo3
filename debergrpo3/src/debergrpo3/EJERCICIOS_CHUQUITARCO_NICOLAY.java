@@ -24,32 +24,24 @@ import java.util.Scanner;
                 case 1:
                     ejercicio9();
                     break;
-
                 case 2:
                     ejercicio10();
                     break;
-
                 case 3:
                     ejercicio11();
                     break;
-
                 case 4:
                     ejercicio12();
                     break;
-
                 case 5:
                     System.out.println("GRACIAS POR USAR EL PROGRAMA");
                     break;
-
                 default:
                     System.out.println("Opcion invalida.");
             }
-
         } while (opcion != 5);
-
         sc.close();
     }
-
 
 public static void ejercicio9(){
     //FACTORIAL
@@ -64,7 +56,6 @@ public static void ejercicio9(){
         System.out.println("El factorial de " + numero + " es: " + factorial);
     }
  
-
 public static void ejercicio10(){
     //DETRERMINAR CUALES SON POSITIVOS, NEGATIVOS Y CEROS
     System.out.println("===============");
@@ -94,6 +85,7 @@ public static void ejercicio10(){
         System.out.println("Negativos: " + negativos);
         System.out.println("Ceros: " + ceros);
 }
+
 public static void ejercicio11() {
     // PROMEDIO DE 20 ESTUDIANTES
     System.out.println("===============");
@@ -121,6 +113,7 @@ public static void ejercicio11() {
     promedio = suma / 20;
     System.out.println("\nPromedio general del curso: " + promedio);
 }
+
 public static void ejercicio12() {
     //FIBONACCI
     System.out.println("===============");
