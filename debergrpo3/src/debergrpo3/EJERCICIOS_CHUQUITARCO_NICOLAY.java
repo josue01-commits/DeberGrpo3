@@ -84,21 +84,30 @@ public static void ejercicio11() {
     System.out.println("\nPromedio general del curso: " + promedio);
 }
 public static void ejercicio12() {
-
+    //FIBONACCI
     System.out.println("===============");
     System.out.println("SECUENCIA DE FIBONACCI");
 
     int n;
 
-    do {
+    while (true) {
+
         System.out.print("Ingrese la cantidad de terminos: ");
-        n = sc.nextInt();
 
-        if (n <= 0) {
-            System.out.println("Error: Ingrese un numero mayor que 0.");
+        if (sc.hasNextInt()) {
+            n = sc.nextInt();
+
+            if (n > 0) {
+                break;
+            } else {
+                System.out.println("Error: Debe ingresar un numero mayor que 0.");
+            }
+
+        } else {
+            System.out.println("Error: Debe ingresar un numero entero.");
+            sc.next(); // limpia la entrada incorrecta
         }
-
-    } while (n <= 0);
+    }
 
     int a = 0;
     int b = 1;
