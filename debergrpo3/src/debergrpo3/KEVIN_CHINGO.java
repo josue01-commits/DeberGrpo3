@@ -25,7 +25,19 @@ public class KEVIN_CHINGO {
          System.out.print("Seleccione una opción: ");
          opcion = sc.nextInt();
          switch(opcion){
-             
+             case 1:
+                 System.out.println("contar numeros");
+             case 2:
+                 System.out.println("registrar ventas");
+             case 3:
+                 System.out.println("contar numeros");
+             case 4:
+                 System.out.println("tabla de multiplicar");
+             case 0:
+                 System.out.println("programa finalizado");
+             default :
+                 System.out.println("opcion invalida");
+                 
 
 }
 
