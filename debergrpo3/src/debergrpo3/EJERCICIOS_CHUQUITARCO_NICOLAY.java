@@ -50,7 +50,7 @@ public static void ejercicio9(){
             factorial *= i;
         }
         System.out.println("El factorial de " + numero + " es: " + factorial);
-    }
+}
  
 public static void ejercicio10(){
     //DETRERMINAR CUALES SON POSITIVOS, NEGATIVOS Y CEROS
