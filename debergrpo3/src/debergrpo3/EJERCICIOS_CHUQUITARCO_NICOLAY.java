@@ -18,6 +18,6 @@ public static void ejercicio9(){
         for (int i = 1; i <= numero; i++) {
             factorial *= i;
         }
-        System.out.println("Factorial = " + factorial);
+        System.out.println("El factorial de " + numero + " es: " + factorial);
     }
  }
