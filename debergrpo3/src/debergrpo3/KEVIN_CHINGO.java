@@ -26,13 +26,17 @@ public class KEVIN_CHINGO {
          opcion = sc.nextInt();
          switch(opcion){
              case 1:
-                 System.out.println("contar numeros");
+                 ejercicio5();
+                 break;
              case 2:
-                 System.out.println("registrar ventas");
+                 ejercicio6();
+                 break;
              case 3:
-                 System.out.println("contar numeros");
+                 ejercicio7();
+                 break;
              case 4:
-                 System.out.println("tabla de multiplicar");
+                 ejercicio8();
+                 break;
              case 0:
                  System.out.println("programa finalizado");
              default :
