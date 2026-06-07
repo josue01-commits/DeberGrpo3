@@ -1,4 +1,4 @@
-
+// trabajo de kevin chingo
 package debergrpo3;
 
 import java.util.Scanner;
@@ -126,4 +126,4 @@ public static void ejercicio8(){
     
 
 }
-}
+} 
