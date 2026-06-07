@@ -93,6 +93,10 @@ public static void ejercicio6(){
 public static void ejercicio7(){
     int numero;
     int contador = 0;
+    while(true){
+        
+
+}
     
 
 }
