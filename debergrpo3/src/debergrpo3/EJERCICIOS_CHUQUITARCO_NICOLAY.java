@@ -18,11 +18,14 @@ import java.util.Scanner;
                 System.out.println("5. SALIR");
                 opcion = sc.nextInt();
                 switch (opcion) {
-                    case
-                }
+                    case 1:
+                        ejercicio9();
+                    break;
 
+                }
+                System.out.println("");
             }
-                
+               
             
         //ejercicio9();
         //ejercicio10();
