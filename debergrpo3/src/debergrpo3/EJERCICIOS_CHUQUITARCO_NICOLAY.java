@@ -6,7 +6,8 @@ import java.util.Scanner;
         static Scanner sc = new Scanner(System.in);
         public static void main(String[] args) {
         //ejercicio9();
-        ejercicio10();
+        //ejercicio10();
+        ejercicio11();
 }
 
 public static void ejercicio9(){
@@ -52,5 +53,24 @@ public static void ejercicio10(){
         System.out.println("Ceros: " + ceros);
 
 }
+public static void ejercicio11(){
+        //PROMEDIO DE 20 ESTUDIANTES
+    
+        System.out.println("===============");
+        System.out.println("PROMEDIOS");
+        
+        double suma = 0;
+        double promedio;
 
+        for (int i = 1; i <= 20; i++) {
+            System.out.print("Ingrese la calificación del estudiante " + i + ": ");
+            double nota = sc.nextDouble();
+
+            suma += nota;
+        }
+
+        promedio = suma / 20;
+
+        System.out.println("\nPromedio general del curso: " + promedio);
+    }
 }
