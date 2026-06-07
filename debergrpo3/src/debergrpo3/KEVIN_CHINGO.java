@@ -94,9 +94,16 @@ public static void ejercicio7(){
     int numero;
     int contador = 0;
     while(true){
-        
+        System.out.print("Ingrese un número (negativo para terminar): ");
+        numero = sc.nextInt();
 
+        if(numero<0)
+          break;
+
+        contador++;
+        
 }
+    System.out.println("Cantidad de números ingresados: " + contador);
     
 
 }
