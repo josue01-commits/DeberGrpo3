@@ -22,6 +22,8 @@ public class KEVIN_CHINGO {
         0. Salir
         =========================================
         """);
+         System.out.print("Seleccione una opción: ");
+         opcion = sc.nextInt();
 
      }while(opcion!=0);
 }  
