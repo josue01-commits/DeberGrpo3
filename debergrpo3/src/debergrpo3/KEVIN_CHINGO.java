@@ -4,10 +4,7 @@
  */
 package debergrpo3;
 
-/**
- *
- * @author pc
- */
+import java.util.Scanner;
 public class KEVIN_CHINGO {
     
 }
