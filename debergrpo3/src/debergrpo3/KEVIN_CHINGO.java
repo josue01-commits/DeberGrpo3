@@ -48,6 +48,9 @@ public class KEVIN_CHINGO {
      }while(opcion!=0);
 }
  public static void ejercicio5(){
+     int numero;
+     int pares = 0;
+     int impares = 0;
 
 }
 
