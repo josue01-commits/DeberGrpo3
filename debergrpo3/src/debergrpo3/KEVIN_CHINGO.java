@@ -42,5 +42,20 @@ public class KEVIN_CHINGO {
 }
 
      }while(opcion!=0);
-}  
+}
+ public static void ejercicio5(){
+
+}
+
+public static void ejercicio6(){
+
+}
+
+public static void ejercicio7(){
+
+}
+
+public static void ejercicio8(){
+
+}
 }
