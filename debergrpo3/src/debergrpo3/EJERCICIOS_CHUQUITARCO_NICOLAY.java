@@ -70,27 +70,30 @@ public static void ejercicio9(){
 
 public static void ejercicio10(){
     //DETRERMINAR CUALES SON POSITIVOS, NEGATIVOS Y CEROS
-    
     System.out.println("===============");
-    System.out.println("Ingresa los numeros porfavor"); 
-        
-        int positivos = 0;
-        int negativos = 0;
-        int ceros = 0;
+    System.out.println("CONTADOR DE POSITIVOS, NEGATIVOS Y CEROS");
 
-        for (int i = 1; i <= 15; i++) {
-            System.out.print("Numero " + i + ": ");
-            int numero = sc.nextInt();
+    int numero;
+    int positivos = 0;
+    int negativos = 0;
+    int ceros = 0;
 
-            if (numero > 0) {
-                positivos++;
-            } else if (numero < 0) {
-                negativos++;
-            } else {
-                ceros++;
-            }
+    for (int i = 1; i <= 15; i++) {
+        while (!sc.hasNextInt()) {
+            System.out.println("Error: Debe ingresar un numero entero.");
+            sc.next(); // limpia la entrada incorrecta
+            System.out.print("Ingrese el numero " + i + ": ");
         }
-
+        System.out.print("Ingrese el numero " + i + ": ");
+        numero = sc.nextInt();
+        if (numero > 0) {
+            positivos++;
+        } else if (numero < 0) {
+            negativos++;
+        } else {
+            ceros++;
+        }
+    }
         System.out.println("\nResultados:");
         System.out.println("Positivos: " + positivos);
         System.out.println("Negativos: " + negativos);
