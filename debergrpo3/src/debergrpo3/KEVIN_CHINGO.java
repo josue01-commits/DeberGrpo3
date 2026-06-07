@@ -63,6 +63,8 @@ public class KEVIN_CHINGO {
              
          }
      }while(numero!=0);
+     System.out.println("Cantidad de números pares: "+pares);
+     System.out.println("Cantidad de números impares: "+impares);
 
 }
 
