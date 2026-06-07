@@ -120,6 +120,7 @@ public static void ejercicio8(){
     System.out.println("\nTabla del " + num);
 
     for(int i=1;i<=20;i++){
+        System.out.println(num + " x " + i + " = " + (num*i));
 
 }
     
