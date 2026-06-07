@@ -51,6 +51,10 @@ public class KEVIN_CHINGO {
      int numero;
      int pares = 0;
      int impares = 0;
+     do{
+         System.out.print("Ingrese un número (0 para terminar): ");
+         numero = sc.nextInt();
+     }while(numero!=0);
 
 }
 
