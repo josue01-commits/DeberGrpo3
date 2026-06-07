@@ -84,7 +84,8 @@ public static void ejercicio6(){
         
         
     }while(venta!=0);
-    
+    System.out.println("Total vendido: $" + total);
+    System.out.println("Cantidad de ventas registradas: " + contador);
 
 }
 
