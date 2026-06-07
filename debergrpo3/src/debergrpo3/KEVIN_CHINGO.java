@@ -109,6 +109,15 @@ public static void ejercicio7(){
 }
 // ejercicio 8
 public static void ejercicio8(){
+    int num;
+
+    do{
+
+    System.out.print("Ingrese un número positivo: ");
+    num = sc.nextInt();
+
+    }while(num<=0);
+    
 
 }
 }
