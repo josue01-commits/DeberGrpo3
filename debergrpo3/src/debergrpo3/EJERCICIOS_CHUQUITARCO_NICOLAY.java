@@ -53,24 +53,34 @@ public static void ejercicio10(){
         System.out.println("Ceros: " + ceros);
 
 }
-public static void ejercicio11(){
-        //PROMEDIO DE 20 ESTUDIANTES
-    
-        System.out.println("===============");
-        System.out.println("PROMEDIOS");
-        
-        double suma = 0;
-        double promedio;
+public static void ejercicio11() {
+    // PROMEDIO DE 20 ESTUDIANTES
 
-        for (int i = 1; i <= 20; i++) {
-            System.out.print("Ingrese la calificación del estudiante " + i + ": ");
-            double nota = sc.nextDouble();
+    System.out.println("===============");
+    System.out.println("PROMEDIOS");
 
-            suma += nota;
-        }
+    double suma = 0;
+    double promedio;
+    double nota;
 
-        promedio = suma / 20;
+    for (int i = 1; i <= 20; i++) {
 
-        System.out.println("\nPromedio general del curso: " + promedio);
+        do {
+            System.out.print("Ingrese la calificación del estudiante " + i + " (0 - 10): ");
+            nota = sc.nextDouble();
+
+            if (nota < 0 || nota > 10) {
+                System.out.println("Error: la calificación debe estar entre 0 y 10.");
+            }
+
+        } while (nota < 0 || nota > 10);
+
+        suma += nota;
     }
+
+    promedio = suma / 20;
+
+    System.out.println("\nPromedio general del curso: " + promedio);
 }
+    }
+
