@@ -7,7 +7,21 @@ import java.util.Scanner;
         public static void main(String[] args) {
             //creacion de menu
             int opcion;
-          
+            do{
+                System.out.println("\n==============================");
+                System.out.println("      MENU DE EJERCICIOS");
+                System.out.println("==============================");
+                System.out.println("1. Ejercicio 9");
+                System.out.println("2. Ejercicio 10");
+                System.out.println("3. Ejercicio 11");
+                System.out.println("4. Ejercicio 12");
+                System.out.println("5. SALIR");
+                opcion = sc.nextInt();
+                switch (opcion) {
+                    case
+                }
+
+            }
                 
             
         //ejercicio9();
