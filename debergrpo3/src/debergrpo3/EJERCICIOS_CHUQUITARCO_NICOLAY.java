@@ -7,7 +7,8 @@ import java.util.Scanner;
         public static void main(String[] args) {
         //ejercicio9();
         //ejercicio10();
-        ejercicio11();
+        //ejercicio11();
+        ejercicio12();
 }
 
 public static void ejercicio9(){
@@ -66,11 +67,11 @@ public static void ejercicio11() {
     for (int i = 1; i <= 20; i++) {
 
         do {
-            System.out.print("Ingrese la calificación del estudiante " + i + " (0 - 10): ");
+            System.out.print("Ingrese la calificacion del estudiante " + i + " (0 - 10): ");
             nota = sc.nextDouble();
 
             if (nota < 0 || nota > 10) {
-                System.out.println("Error: la calificación debe estar entre 0 y 10.");
+                System.out.println("Error: la calificacion debe estar entre 0 y 10.");
             }
 
         } while (nota < 0 || nota > 10);
@@ -82,5 +83,37 @@ public static void ejercicio11() {
 
     System.out.println("\nPromedio general del curso: " + promedio);
 }
+public static void ejercicio12() {
+
+    System.out.println("===============");
+    System.out.println("SECUENCIA DE FIBONACCI");
+
+    int n;
+
+    do {
+        System.out.print("Ingrese la cantidad de terminos: ");
+        n = sc.nextInt();
+
+        if (n <= 0) {
+            System.out.println("Error: Ingrese un numero mayor que 0.");
+        }
+
+    } while (n <= 0);
+
+    int a = 0;
+    int b = 1;
+
+    System.out.println("Secuencia de Fibonacci:");
+
+    for (int i = 1; i <= n; i++) {
+        System.out.print(a + " ");
+
+        int siguiente = a + b;
+        a = b;
+        b = siguiente;
     }
+
+    System.out.println();
+}
+}
 
