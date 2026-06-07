@@ -8,6 +8,6 @@ public class KEVIN_CHINGO {
         menuPrincipal();
 }
  public static void menuPrincipal(){
-
+     int opcion;
 }  
 }
