@@ -5,7 +5,7 @@ import java.util.Scanner;
     public class EJERCICIOS_CHUQUITARCO_NICOLAY {
         static Scanner sc = new Scanner(System.in);
         public static void main(String[] args) {
-        ejercicio9();
+        //ejercicio9();
         ejercicio10();
 }
 
@@ -27,14 +27,14 @@ public static void ejercicio10(){
     //DETRERMINAR CUALES SON POSITIVOS, NEGATIVOS Y CEROS
     
     System.out.println("===============");
-    System.out.println("Que numero es ?"); 
+    System.out.println("Ingresa los numeros porfavor"); 
         
         int positivos = 0;
         int negativos = 0;
         int ceros = 0;
 
         for (int i = 1; i <= 15; i++) {
-            System.out.print("Número " + i + ": ");
+            System.out.print("Numero " + i + ": ");
             int numero = sc.nextInt();
 
             if (numero > 0) {
@@ -46,9 +46,11 @@ public static void ejercicio10(){
             }
         }
 
+        System.out.println("\nResultados:");
         System.out.println("Positivos: " + positivos);
         System.out.println("Negativos: " + negativos);
         System.out.println("Ceros: " + ceros);
 
 }
+
 }
