@@ -5,10 +5,15 @@ import java.util.Scanner;
     public class EJERCICIOS_CHUQUITARCO_NICOLAY {
         static Scanner sc = new Scanner(System.in);
         public static void main(String[] args) {
+            //creacion de menu
+            int opcion;
+          
+                
+            
         //ejercicio9();
         //ejercicio10();
         //ejercicio11();
-        ejercicio12();
+        //ejercicio12();
 }
 
 public static void ejercicio9(){
