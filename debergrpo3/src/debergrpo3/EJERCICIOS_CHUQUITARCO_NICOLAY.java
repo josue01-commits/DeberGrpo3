@@ -125,33 +125,24 @@ public static void ejercicio12() {
     //FIBONACCI
     System.out.println("===============");
     System.out.println("SECUENCIA DE FIBONACCI");
-
     int n;
-
     while (true) {
-
         System.out.print("Ingrese la cantidad de terminos: ");
-
         if (sc.hasNextInt()) {
             n = sc.nextInt();
-
             if (n > 0) {
                 break;
             } else {
                 System.out.println("Error: Debe ingresar un numero mayor que 0.");
             }
-
         } else {
             System.out.println("Error: Debe ingresar un numero entero.");
             sc.next(); // limpia la entrada incorrecta
         }
     }
-
     int a = 0;
     int b = 1;
-
     System.out.println("Secuencia de Fibonacci:");
-
     for (int i = 1; i <= n; i++) {
         System.out.print(a + " ");
 
@@ -159,7 +150,6 @@ public static void ejercicio12() {
         a = b;
         b = siguiente;
     }
-
     System.out.println();
 }
 }
