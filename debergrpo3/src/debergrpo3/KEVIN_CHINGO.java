@@ -47,6 +47,7 @@ public class KEVIN_CHINGO {
 
      }while(opcion!=0);
 }
+ // ejercicio 5
  public static void ejercicio5(){
      int numero;
      int pares = 0;
@@ -67,7 +68,7 @@ public class KEVIN_CHINGO {
      System.out.println("Cantidad de números impares: "+impares);
 
 }
-
+// ejercicio 6
 public static void ejercicio6(){
     double venta;
     double total = 0;
@@ -88,11 +89,14 @@ public static void ejercicio6(){
     System.out.println("Cantidad de ventas registradas: " + contador);
 
 }
-
+// ejrcicio 7
 public static void ejercicio7(){
+    int numero;
+    int contador = 0;
+    
 
 }
-
+// ejercicio 8
 public static void ejercicio8(){
 
 }
