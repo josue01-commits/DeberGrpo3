@@ -102,40 +102,29 @@ public static void ejercicio10(){
 }
 public static void ejercicio11() {
     // PROMEDIO DE 20 ESTUDIANTES
-
     System.out.println("===============");
     System.out.println("PROMEDIO DE 20 ESTUDIANTES");
-
     double suma = 0;
     double promedio;
     double nota;
-
     for (int i = 1; i <= 20; i++) {
-
         while (true) {
-
             System.out.print("Ingrese la nota del estudiante " + i + " (0-10): ");
-
             if (!sc.hasNextDouble()) {
                 System.out.println("Error: Debe ingresar un número.");
                 sc.next();
                 continue;
             }
-
             nota = sc.nextDouble();
-
             if (nota < 0 || nota > 10) {
                 System.out.println("Error: La nota debe estar entre 0 y 10.");
             } else {
                 break;
             }
         }
-
         suma += nota;
     }
-
     promedio = suma / 20;
-
     System.out.println("\nPromedio general del curso: " + promedio);
 }
 public static void ejercicio12() {
