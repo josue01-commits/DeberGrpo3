@@ -1,21 +1,23 @@
 
 package debergrpo3;
+import java.util.Scanner;
 
-public class EJERCICIOS_CHUQUITARCO_NICOLAY {
-    
+    public class EJERCICIOS_CHUQUITARCO_NICOLAY {
+        static Scanner sc = new Scanner(System.in);
+        public static void main(String[] args) {
+        ejercicio9();
 }
 
 public static void ejercicio9(){
-    Scanner sc = new Scanner(System.in);
     //FACTORIAL
     System.out.println("===============");
     System.out.println("FACTORIAL"); 
-    int numero;
-    long factorial = 1;
-
-        System.out.print("Ingrese un número: ");
-        numero = entrada.nextInt();
-
-
-
-}
+    System.out.print("Ingrese un numero: ");
+        int numero = sc.nextInt();
+        long factorial = 1;
+        for (int i = 1; i <= numero; i++) {
+            factorial *= i;
+        }
+        System.out.println("Factorial = " + factorial);
+    }
+ }
