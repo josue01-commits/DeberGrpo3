@@ -1,11 +1,7 @@
-
 package debergrpo3;
 import java.util.Scanner;
-
     public class EJERCICIOS_CHUQUITARCO_NICOLAY {
-
     static Scanner sc = new Scanner(System.in);
-
     public static void main(String[] args) {
         int opcion;
         //CREANDO MENU
