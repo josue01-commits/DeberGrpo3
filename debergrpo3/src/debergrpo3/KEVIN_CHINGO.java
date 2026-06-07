@@ -69,6 +69,16 @@ public class KEVIN_CHINGO {
 }
 
 public static void ejercicio6(){
+    double venta;
+    double total = 0;
+    int contador = 0;
+    do{
+        System.out.print("Ingrese una venta (0 para terminar): ");
+        venta = sc.nextDouble();
+        
+        
+    }while(venta!=0);
+    
 
 }
 
