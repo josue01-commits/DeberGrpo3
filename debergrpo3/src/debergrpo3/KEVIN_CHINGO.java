@@ -117,6 +117,11 @@ public static void ejercicio8(){
     num = sc.nextInt();
 
     }while(num<=0);
+    System.out.println("\nTabla del " + num);
+
+    for(int i=1;i<=20;i++){
+
+}
     
 
 }
