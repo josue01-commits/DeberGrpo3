@@ -95,7 +95,7 @@ public static void ejercicio2(){
     System.out.println("Nota:Cualquier numero negativo\ningresado terminara el proceso.");
     System.out.println("================================\n");
     while (true){
-        System.out.print("INGRESE El NUMERO "+(numT+1)+": ");
+        System.out.print("INGRESE El NUMERO ("+(numT+1)+"INTENTO): ");
         int num =sc.nextInt();
         if (num<0) {
     System.out.println("-------------------------------");
