@@ -17,6 +17,8 @@ public class Wendy_Chasipanta {
              String propietario;
              String placa;
              String marca;
+             String color;
+             String fecha_de_matricula;
              int año;
              
              System.out.println(" REGISTRO DE VEHICULOS ");
@@ -30,6 +32,12 @@ public class Wendy_Chasipanta {
              System.out.print("Ingrese la marca del vehiculo: ");
              marca = sc.nextLine();
              
+             System.out.println("Ingrese el color del vehiculo: ");
+             color = sc.nextLine();
+             
+             System.out.println("Igrese la fecha de matricula: ");
+             fecha_de_matricula = sc.nextLine();
+             
              System.out.print("Ingrese el año del vehiculo: ");
              año = sc.nextInt();
              
@@ -37,6 +45,8 @@ public class Wendy_Chasipanta {
              System.out.println("Propietario: " + propietario);
              System.out.println("Placa: " + placa);
              System.out.println("Marca: " + marca);
+             System.out.println("Colr: "+ color);
+             System.out.println("Fecha de matricula: "+ fecha_de_matricula );
              System.out.println("Año: " + año);
              
              if (año >= 2020) {
