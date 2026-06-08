@@ -12,16 +12,17 @@ import java.util.Scanner;
  */
 public class Wendy_Chasipanta {
      public static void main(String[] args) {
-        //sistema de estudiante 
+         //cambio de biblioteca
          try (Scanner leer = new Scanner(System.in)) {
              int opcion;
-             String nombre;
-             double nota1, nota2, promedio;
+             String libro;
+             double multa = 0;
+             
              do {
-                 System.out.println("\n****** MENU DE ESTUDIANTES ******");
-                 System.out.println("1. Registrar estudiante");
-                 System.out.println("2. Calcular promedio");
-                 System.out.println("3. Mostrar estado");
+                 System.out.println("\n===== SISTEMA DE BIBLIOTECA =====");
+                 System.out.println("1. Registrar prestamo");
+                 System.out.println("2. Registrar devolucion");
+                 System.out.println("3. Consultar multa");
                  System.out.println("4. Salir");
                  System.out.print("Seleccione una opcion: ");
                  opcion = leer.nextInt();
@@ -30,40 +31,30 @@ public class Wendy_Chasipanta {
                  switch (opcion) {
                      
                      case 1 -> {
-                         System.out.print("Ingrese el nombre del estudiante: ");
-                         nombre = leer.nextLine();
-                         
-                         System.out.println("Estudiante registrado: " + nombre);
+                         System.out.print("Ingrese el nombre del libro: ");
+                         libro = leer.nextLine();
+                         System.out.println("Libro prestado: " + libro);
                      }
-                         
+                     
                      case 2 -> {
-                         System.out.print("Ingrese la primera nota: ");
-                         nota1 = leer.nextDouble();
+                         System.out.print("Ingrese el nombre del libro devuelto: ");
+                         libro = leer.nextLine();
                          
-                         System.out.print("Ingrese la segunda nota: ");
-                         nota2 = leer.nextDouble();
+                         System.out.print("Ingrese los dias de retraso: ");
+                         int dias = leer.nextInt();
                          
-                         promedio = (nota1 + nota2) / 2;
+                         multa = dias * 0.50;
                          
-                         System.out.println("Promedio: " + promedio);
+                         System.out.println("Libro devuelto: " + libro);
+                         System.out.println("Multa generada: $" + multa);
                      }
-                         
-                     case 3 -> {
-                         System.out.print("Ingrese el promedio del estudiante: ");
-                         promedio = leer.nextDouble();
-                         
-                         if (promedio >= 7) {
-                             System.out.println("APROBADO");
-                         } else {
-                             System.out.println("REPROBADO");
-                         }
-                     }
-                         
-                     case 4 -> System.out.println("Gracias por utilizar el sistema.");
-                         
-                     default -> System.out.println("Opción incorrecta.");
+                     
+                     case 3 -> System.out.println("ultima multa registrada: $" + multa);
+                     
+                     case 4 -> System.out.println("SALIENDO DEL SISTEMA......");
+                     
+                     default -> System.out.println("Opcion incorrecta.");
                  }
-                 
              } while (opcion != 4);
          }
     }
