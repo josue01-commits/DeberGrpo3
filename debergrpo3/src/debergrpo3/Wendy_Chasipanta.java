@@ -11,44 +11,39 @@ import java.util.Scanner;
  * @author USER
  */
 public class Wendy_Chasipanta {
-     public static void main(String[] args) {
-         //fecha de vacunacion
-         try (Scanner leer = new Scanner(System.in)) {
-             String nombreMascota;
-             String especie;
-             String nombreDueno;
-             String fechaVacunacion;
-             String color;
-             int edad;
+     public static void main(String[] args) {      
+         try (Scanner sc = new Scanner(System.in)) {
+             //registrando un vehiculo
+             String propietario;
+             String placa;
+             String marca;
+             int año;
              
-             System.out.println(" REGISTRO DE MASCOTAS ");
+             System.out.println(" REGISTRO DE VEHICULOS ");
              
-             System.out.print("Ingrese el nombre de la mascota: ");
-             nombreMascota = leer.nextLine();
+             System.out.print("Ingrese el nombre del propietario: ");
+             propietario = sc.nextLine();
              
-             System.out.print("Ingrese la especie: ");
-             especie = leer.nextLine();
+             System.out.print("Ingrese la placa del vehiculo: ");
+             placa = sc.nextLine();
              
-             System.out.print("Ingrese el nombre del dueño: ");
-             nombreDueno = leer.nextLine();
+             System.out.print("Ingrese la marca del vehiculo: ");
+             marca = sc.nextLine();
              
-             System.out.print("Ingrese la fecha de vacunacion (dd/mm/aaaa): ");
-             fechaVacunacion = leer.nextLine();
+             System.out.print("Ingrese el año del vehiculo: ");
+             año = sc.nextInt();
              
-             System.out.println("Ingrese el color de la mascota: ");
-             color = leer.nextLine();
+             System.out.println("\n DATOS DEL VEHICULO ");
+             System.out.println("Propietario: " + propietario);
+             System.out.println("Placa: " + placa);
+             System.out.println("Marca: " + marca);
+             System.out.println("Año: " + año);
              
-             System.out.print("Ingrese la edad de la mascota: ");
-             edad = leer.nextInt();
-             
-             System.out.println("\n DATOS DE LA MASCOTA ");
-             System.out.println("Nombre de la mascota: " + nombreMascota);
-             System.out.println("Especie: " + especie);
-             System.out.println("Dueño: " + nombreDueno);
-             System.out.println("Fecha de vacunacion: " + fechaVacunacion);
-             System.out.println("Color de la mascota: "+ color);
-             System.out.println("Edad: " + edad + " años");
-         }
+             if (año >= 2020) {
+                 System.out.println("Vehiculo reciente.");
+             } else {
+                 System.out.println("Vehiculo antiguo.");
+             }}
     }
 }
 
