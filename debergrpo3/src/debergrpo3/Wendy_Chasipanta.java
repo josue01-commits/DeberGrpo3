@@ -12,26 +12,30 @@ import java.util.Scanner;
  */
 public class Wendy_Chasipanta {
      public static void main(String[] args) {
-         // contar vocales de la palabra
+         //numero primo
          try (Scanner leer = new Scanner(System.in)) {
-             String palabra;
-             int contador = 0;
+             int numero;
+             boolean primo = true;
              
-             System.out.print("Ingrese una palabra: ");
-             palabra = leer.nextLine().toLowerCase();
+             System.out.print("Ingrese un numero: ");
+             numero = leer.nextInt();
              
-             for (int i = 0; i < palabra.length(); i++) {
-                 
-                 char letra = palabra.charAt(i);
-                 
-                 if (letra == 'a' || letra == 'e' || letra == 'i'
-                         || letra == 'o' || letra == 'u') {
-                     contador++;
+             if (numero <= 1) {
+                 primo = false;
+             } else {
+                 for (int i = 2; i < numero; i++) {
+                     if (numero % i == 0) {
+                         primo = false;
+                         break;
+                     }
                  }
              }
              
-             System.out.println("Cantidad de vocales: " + contador);
-         }
+             if (primo) {
+                 System.out.println("El numero es primo.");
+             } else {
+                 System.out.println("El numero no es primo.");
+             }}
     }
 }
 
