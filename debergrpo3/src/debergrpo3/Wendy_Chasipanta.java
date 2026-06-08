@@ -12,29 +12,37 @@ import java.util.Scanner;
  */
 public class Wendy_Chasipanta {
      public static void main(String[] args) {
-         //numero primo
+         //sistema de biblioteca
          try (Scanner leer = new Scanner(System.in)) {
-             int numero;
-             boolean primo = true;
+             String nombreLibro;
+             String autor;
+             int diasRetraso;
+             double multa = 0;
              
-             System.out.print("Ingrese un numero: ");
-             numero = leer.nextInt();
+             System.out.println("****** SISTEMA DE BIBLIOTECA ********");
              
-             if (numero <= 1) {
-                 primo = false;
+             System.out.print("Ingrese el nombre del libro: ");
+             nombreLibro = leer.nextLine();
+             
+             System.out.print("Ingrese el nombre del autor: ");
+             autor = leer.nextLine();
+             
+             System.out.print("Ingrese los dias de retraso en la devolucion: ");
+             diasRetraso = leer.nextInt();
+             
+             if (diasRetraso > 0) {
+                 multa = diasRetraso * 0.50;
+             } 
+             System.out.println("\n****** REPORTE ******");
+             System.out.println("Libro: " + nombreLibro);
+             System.out.println("Autor: " + autor);
+             System.out.println("Dias de retraso: " + diasRetraso);
+             System.out.println("Multa: $" + multa);
+             
+             if (multa > 0) {
+                 System.out.println("El usuario debe pagar una multa.");
              } else {
-                 for (int i = 2; i < numero; i++) {
-                     if (numero % i == 0) {
-                         primo = false;
-                         break;
-                     }
-                 }
-             }
-             
-             if (primo) {
-                 System.out.println("El numero es primo.");
-             } else {
-                 System.out.println("El numero no es primo.");
+                 System.out.println("El libro fue devuelto a tiempo.");
              }}
     }
 }
