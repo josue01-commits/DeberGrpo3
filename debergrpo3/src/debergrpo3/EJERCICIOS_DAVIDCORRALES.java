@@ -8,35 +8,53 @@ public class EJERCICIOS_DAVIDCORRALES {
 
     public static void main(String[] args) {
     while(true){
-       
-        System.out.println("""
-        \n=========================
-            MENU DE EJERCICIOS
-        -------------------------
-        1.-EJERCICIO 1
-        2.-EJERCICIO 2
-        3.-EJERCICIO 3
-        4.-EJERCICIO 4
-        5.-Salir
-        -------------------------""");
-        System.out.print("OPCION: ");
-        int opcion =sc.nextInt();
-         sc.nextLine();
-        switch (opcion){
-            case 1:System.out.println("\n"); ejercicio1();
+
+    System.out.println("""
+    \n=========================
+        MENU DE EJERCICIOS
+    -------------------------
+    1.-EJERCICIO 1
+    2.-EJERCICIO 2
+    3.-EJERCICIO 3
+    4.-EJERCICIO 4
+    5.-Salir
+    -------------------------""");
+
+    System.out.print("OPCION: ");
+    int opcion = sc.nextInt();
+    sc.nextLine();
+
+    switch(opcion){
+
+        case 1:
+            System.out.println("\n");
+            ejercicio1();
             break;
-            case 2:System.out.println("\n"); ejercicio2();
+
+        case 2:
+            System.out.println("\n");
+            ejercicio2();
             break;
-            case 3:System.out.println("\n"); ejercicio3();
+
+        case 3:
+            System.out.println("\n");
+            ejercicio3();
             break;
-            case 4:System.out.println("\n"); ejercicio4();
-            case 5: break;
-            default:
-                    System.out.println("Opción inválida.\n");
-                    break;
-            
-        }
+
+        case 4:
+            System.out.println("\n");
+            ejercicio4();
+            break; // 
+
+        case 5:
+            System.out.println("Saliendo del programa...");
+            return; 
+
+        default:
+            System.out.println("Opción inválida.\n");
+            break;
     }
+}
         
        
     }

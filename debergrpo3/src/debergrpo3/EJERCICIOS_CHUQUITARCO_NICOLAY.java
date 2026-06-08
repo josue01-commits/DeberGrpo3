@@ -36,7 +36,7 @@ import java.util.Scanner;
                     System.out.println("Opcion invalida.");
             }
         } while (opcion != 5);
-        sc.close();
+        
     }
 
 public static void ejercicio9(){
