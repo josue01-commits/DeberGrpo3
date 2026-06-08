@@ -12,50 +12,50 @@ import java.util.Scanner;
  */
 public class Wendy_Chasipanta {
      public static void main(String[] args) {
-         //cambio de biblioteca
+         //sistema de restaurante
          try (Scanner leer = new Scanner(System.in)) {
              int opcion;
-             String libro;
-             double multa = 0;
+             int cantidad;
+             double total = 0;
              
              do {
-                 System.out.println("\n===== SISTEMA DE BIBLIOTECA =====");
-                 System.out.println("1. Registrar prestamo");
-                 System.out.println("2. Registrar devolucion");
-                 System.out.println("3. Consultar multa");
-                 System.out.println("4. Salir");
+                 System.out.println("\n===== RESTAURANTE =====");
+                 System.out.println("1. Hamburguesa ($5)");
+                 System.out.println("2. Pizza ($8)");
+                 System.out.println("3. Gaseosa ($2)");
+                 System.out.println("4. Ver total");
+                 System.out.println("5. Salir");
                  System.out.print("Seleccione una opcion: ");
                  opcion = leer.nextInt();
-                 leer.nextLine();
                  
                  switch (opcion) {
                      
                      case 1 -> {
-                         System.out.print("Ingrese el nombre del libro: ");
-                         libro = leer.nextLine();
-                         System.out.println("Libro prestado: " + libro);
+                         System.out.print("Cantidad: ");
+                         cantidad = leer.nextInt();
+                         total += cantidad * 5;
                      }
                      
                      case 2 -> {
-                         System.out.print("Ingrese el nombre del libro devuelto: ");
-                         libro = leer.nextLine();
-                         
-                         System.out.print("Ingrese los dias de retraso: ");
-                         int dias = leer.nextInt();
-                         
-                         multa = dias * 0.50;
-                         
-                         System.out.println("Libro devuelto: " + libro);
-                         System.out.println("Multa generada: $" + multa);
+                         System.out.print("Cantidad: ");
+                         cantidad = leer.nextInt();
+                         total += cantidad * 8;
                      }
                      
-                     case 3 -> System.out.println("ultima multa registrada: $" + multa);
+                     case 3 -> {
+                         System.out.print("Cantidad: ");
+                         cantidad = leer.nextInt();
+                         total += cantidad * 2;
+                     }
                      
-                     case 4 -> System.out.println("SALIENDO DEL SISTEMA......");
+                     case 4 -> System.out.println("Total a pagar: $" + total);
                      
-                     default -> System.out.println("Opcion incorrecta.");
+                     case 5 -> System.out.println("Gracias por su compra.");
+                     
+                     default -> System.out.println("Opción invalida.");
                  }
-             } while (opcion != 4);
+                 
+             } while (opcion != 5);
          }
     }
 }
