@@ -30,7 +30,7 @@ public class Wendy_Chasipanta {
                  case 1 -> System.out.println("Su saldo actual es: $" + saldo);
                      
                  case 2 -> {
-                     System.out.print("Ingrese el monto a depositar: ");
+                     System.out.print("Ingrese el monto que quiere depositar: ");
                      monto = leer.nextDouble();
                      saldo += monto;
                      System.out.println("Nuevo saldo: $" + saldo);
