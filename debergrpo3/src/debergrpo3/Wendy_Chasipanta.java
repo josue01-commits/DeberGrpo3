@@ -18,6 +18,7 @@ public class Wendy_Chasipanta {
              String especie;
              String nombreDueno;
              String fechaVacunacion;
+             String color;
              int edad;
              
              System.out.println(" REGISTRO DE MASCOTAS ");
@@ -34,6 +35,9 @@ public class Wendy_Chasipanta {
              System.out.print("Ingrese la fecha de vacunacion (dd/mm/aaaa): ");
              fechaVacunacion = leer.nextLine();
              
+             System.out.println("Ingrese el color de la mascota: ");
+             color = leer.nextLine();
+             
              System.out.print("Ingrese la edad de la mascota: ");
              edad = leer.nextInt();
              
@@ -42,6 +46,7 @@ public class Wendy_Chasipanta {
              System.out.println("Especie: " + especie);
              System.out.println("Dueño: " + nombreDueno);
              System.out.println("Fecha de vacunacion: " + fechaVacunacion);
+             System.out.println("Color de la mascota: "+ color);
              System.out.println("Edad: " + edad + " años");
          }
     }
