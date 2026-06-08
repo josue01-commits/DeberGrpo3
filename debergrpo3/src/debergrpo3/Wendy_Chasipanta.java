@@ -12,18 +12,26 @@ import java.util.Scanner;
  */
 public class Wendy_Chasipanta {
      public static void main(String[] args) {
-         // numero par o impar
+         // contar vocales de la palabra
          try (Scanner leer = new Scanner(System.in)) {
-             int numero;
+             String palabra;
+             int contador = 0;
              
-             System.out.print("Ingrese un numero: ");
-             numero = leer.nextInt();
+             System.out.print("Ingrese una palabra: ");
+             palabra = leer.nextLine().toLowerCase();
              
-             if (numero % 2 == 0) {
-                 System.out.println("El numero es par.");
-             } else {
-                 System.out.println("El nmero es impar.");
-             }}
+             for (int i = 0; i < palabra.length(); i++) {
+                 
+                 char letra = palabra.charAt(i);
+                 
+                 if (letra == 'a' || letra == 'e' || letra == 'i'
+                         || letra == 'o' || letra == 'u') {
+                     contador++;
+                 }
+             }
+             
+             System.out.println("Cantidad de vocales: " + contador);
+         }
     }
 }
 
