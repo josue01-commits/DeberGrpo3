@@ -12,48 +12,33 @@ import java.util.Scanner;
  */
 public class Wendy_Chasipanta {
      public static void main(String[] args) {
-         
-       try (Scanner leer = new Scanner(System.in)) {
-            int cantidad;
-            double nota, suma = 0, promedio;
-            double mayor = 0;
-            double menor = 100;
-
-            System.out.print("Cuantos estudiantes desea registrar?: ");
-            cantidad = leer.nextInt();
-
-            for (int i = 1; i <= cantidad; i++) {
-
-                System.out.print("Ingrese la nota del estudiante " + i + ": ");
-                nota = leer.nextDouble();
-
-                suma += nota;
-
-                if (nota > mayor) {
-                    mayor = nota;
-                }
-
-                if (nota < menor) {
-                    menor = nota;
-                }
-            }
-
-            promedio = suma / cantidad;
-
-            System.out.println("\n===== RESULTADOS =====");
-            System.out.println("Promedio general: " + promedio);
-            System.out.println("Nota mas alta: " + mayor);
-            System.out.println("Nota mas baja: " + menor);
-
-            if (promedio >= 7) {
-                System.out.println("El curso aprobo.");
-            } else {
-                System.out.println("El curso no aprobo.");
-            }
-
-            leer.close();
-    }
-        }
-    }
+         //factura 
+         try (Scanner leer = new Scanner(System.in)) {
+             String producto;
+             int cantidad;
+             double precio, subtotal, iva, total;
+             System.out.println("===== FACTURA SIMPLE =====");
+             System.out.print("Ingrese el nombre del producto: ");
+             producto = leer.nextLine();
+             System.out.print("Ingrese la cantidad: ");
+             cantidad = leer.nextInt();
+             System.out.print("Ingrese el precio unitario: ");
+             precio = leer.nextDouble();
+             subtotal = cantidad * precio;
+             iva = subtotal * 0.15;
+             total = subtotal + iva;
+             System.out.println("\n===== DETALLE DE FACTURA =====");
+             System.out.println("Producto: " + producto);
+             System.out.println("Cantidad: " + cantidad);
+             System.out.println("Precio Unitario: $" + precio);
+             System.out.println("Subtotal: $" + subtotal);
+             System.out.println("IVA (15%): $" + iva);
+             System.out.println("Total a pagar: $" + total);
+             if (total > 100) {
+                 System.out.println("Cliente aplica para promoción.");
+             } else {
+                 System.out.println("Cliente no aplica para promoción.");
+             }}
+    }}
     
     
