@@ -11,49 +11,35 @@ import java.util.Scanner;
  * @author USER
  */
 public class Wendy_Chasipanta {
-     public static void main(String[] args) {      
-         try (Scanner sc = new Scanner(System.in)) {
-             //registrando un vehiculo
-             String propietario;
-             String placa;
-             String marca;
-             String color;
-             String fecha_de_matricula;
-             int año;
+     public static void main(String[] args) {
+         System.out.println("SOLICITAR 10 NUMEROS Y VER CCUAL ES EL MAYOR Y EL MENOR");
+         try (Scanner leer = new Scanner(System.in)) {
+             int numero;
+             int mayor = 0;
+             int menor = 0;
              
-             System.out.println(" REGISTRO DE VEHICULOS ");
+             for (int i = 1; i <= 10; i++) {
+                 
+                 System.out.print("Ingrese el numero " + i + ": ");
+                 numero = leer.nextInt();
+                 
+                 if (i == 1) {
+                     mayor = numero;
+                     menor = numero;
+                 }
+                 
+                 if (numero > mayor) {
+                     mayor = numero;
+                 }
+                 
+                 if (numero < menor) {
+                     menor = numero;
+                 }
+             }
              
-             System.out.print("Ingrese el nombre del propietario: ");
-             propietario = sc.nextLine();
-             
-             System.out.print("Ingrese la placa del vehiculo: ");
-             placa = sc.nextLine();
-             
-             System.out.print("Ingrese la marca del vehiculo: ");
-             marca = sc.nextLine();
-             
-             System.out.println("Ingrese el color del vehiculo: ");
-             color = sc.nextLine();
-             
-             System.out.println("Igrese la fecha de matricula: ");
-             fecha_de_matricula = sc.nextLine();
-             
-             System.out.print("Ingrese el año del vehiculo: ");
-             año = sc.nextInt();
-             
-             System.out.println("\n DATOS DEL VEHICULO ");
-             System.out.println("Propietario: " + propietario);
-             System.out.println("Placa: " + placa);
-             System.out.println("Marca: " + marca);
-             System.out.println("Colr: "+ color);
-             System.out.println("Fecha de matricula: "+ fecha_de_matricula );
-             System.out.println("Año: " + año);
-             
-             if (año >= 2020) {
-                 System.out.println("Vehiculo reciente.");
-             } else {
-                 System.out.println("Vehiculo antiguo.");
-             }}
+             System.out.println("\n El numero mayor es: " + mayor);
+             System.out.println("\n El numero menor es: " + menor);
+         }
     }
 }
 
