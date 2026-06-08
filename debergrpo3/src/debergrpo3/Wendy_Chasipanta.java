@@ -12,32 +12,44 @@ import java.util.Scanner;
  */
 public class Wendy_Chasipanta {
      public static void main(String[] args) {
-         //factura 
+         //algoritmo de un cajero basico 
          try (Scanner leer = new Scanner(System.in)) {
-             String producto;
-             int cantidad;
-             double precio, subtotal, iva, total;
-             System.out.println("===== FACTURA SIMPLE =====");
-             System.out.print("Ingrese el nombre del producto: ");
-             producto = leer.nextLine();
-             System.out.print("Ingrese la cantidad: ");
-             cantidad = leer.nextInt();
-             System.out.print("Ingrese el precio unitario: ");
-             precio = leer.nextDouble();
-             subtotal = cantidad * precio;
-             iva = subtotal * 0.15;
-             total = subtotal + iva;
-             System.out.println("\n===== DETALLE DE FACTURA =====");
-             System.out.println("Producto: " + producto);
-             System.out.println("Cantidad: " + cantidad);
-             System.out.println("Precio Unitario: $" + precio);
-             System.out.println("Subtotal: $" + subtotal);
-             System.out.println("IVA (15%): $" + iva);
-             System.out.println("Total a pagar: $" + total);
-             if (total > 100) {
-                 System.out.println("Cliente aplica para promoción.");
-             } else {
-                 System.out.println("Cliente no aplica para promoción.");
+             double saldo = 1000;
+             int opcion;
+             double monto;
+             
+             System.out.println("===== CAJERO AUTOMATICO =====");
+             System.out.println("1. Consultar saldo");
+             System.out.println("2. Depositar dinero");
+             System.out.println("3. Retirar dinero");
+             System.out.print("Seleccione una opcion: ");
+             opcion = leer.nextInt();
+             
+             switch (opcion) {
+                 
+                 case 1 -> System.out.println("Su saldo actual es: $" + saldo);
+                     
+                 case 2 -> {
+                     System.out.print("Ingrese el monto a depositar: ");
+                     monto = leer.nextDouble();
+                     saldo += monto;
+                     System.out.println("Nuevo saldo: $" + saldo);
+                 }
+                     
+                 case 3 -> {
+                     System.out.print("Ingrese el monto a retirar: ");
+                     monto = leer.nextDouble();
+                     
+                     if (monto <= saldo) {
+                         saldo -= monto;
+                         System.out.println("Retiro realizado.");
+                         System.out.println("Saldo restante: $" + saldo);
+                     } else {
+                         System.out.println("Fondos insuficientes.");
+                     }
+                 }
+                     
+                 default -> System.out.println("Opcion no valida.");
              }}
     }}
     
