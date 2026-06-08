@@ -12,16 +12,18 @@ import java.util.Scanner;
  */
 public class Wendy_Chasipanta {
      public static void main(String[] args) {
-         // calculadora de salario
+         // numero par o impar
          try (Scanner leer = new Scanner(System.in)) {
-             double horas, pago, salario;
-             System.out.print("Ingrese las horas trabajadas: ");
-             horas = leer.nextDouble();
-             System.out.print("Ingrese el pago por hora: ");
-             pago = leer.nextDouble();
-             salario = horas * pago;
-             System.out.println("Salario total: $" + salario);
-         }
+             int numero;
+             
+             System.out.print("Ingrese un numero: ");
+             numero = leer.nextInt();
+             
+             if (numero % 2 == 0) {
+                 System.out.println("El numero es par.");
+             } else {
+                 System.out.println("El nmero es impar.");
+             }}
     }
 }
 
