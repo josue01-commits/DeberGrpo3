@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class Wendy_Chasipanta {
      public static void main(String[] args) {
-         //suma de numeros pares etre el 1 y 200
+         //algoritmo suma de numeros pares etre el 1 y 200
          try (Scanner leer = new Scanner(System.in)) {
              System.out.println("SUMA DE TODOS LOS NUMEROS PARES ENTRE EL 1 Y 200");
              int numero;
