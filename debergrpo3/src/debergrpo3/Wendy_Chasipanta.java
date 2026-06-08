@@ -12,34 +12,29 @@ import java.util.Scanner;
  */
 public class Wendy_Chasipanta {
      public static void main(String[] args) {
-        //control unitario
+        //calculadora del IMC
          try (Scanner leer = new Scanner(System.in)) {
-             int cantidad;
-             double precio;
-             double valorTotal = 0;
-             
-             System.out.print("Cuantos productos desea registrar?: ");
-             int n = leer.nextInt();
-             leer.nextLine();
-             
-             for (int i = 1; i <= n; i++) {
-                 
-                 System.out.println("\nProducto #" + i);
-                 
-                 System.out.print("Nombre: ");
-                 leer.nextLine();
-                 
-                 System.out.print("Cantidad: ");
-                 cantidad = leer.nextInt();
-                 
-                 System.out.print("Precio unitario: ");
-                 precio = leer.nextDouble();
-                 leer.nextLine();
-                 
-                 valorTotal += cantidad * precio;
-             }
-             System.out.println("\nValor total del inventario: $" + valorTotal);
-         }
+             String nombre;
+             double peso, estatura, imc;
+             System.out.println("===== CALCULADORA DE IMC =====");
+             System.out.print("Ingrese su nombre: ");
+             nombre = leer.nextLine();
+             System.out.print("Ingrese su peso (kg): ");
+             peso = leer.nextDouble();
+             System.out.print("Ingrese su estatura (m): ");
+             estatura = leer.nextDouble();
+             imc = peso / (estatura * estatura);
+             System.out.println("\nNombre: " + nombre);
+             System.out.println("IMC: " + imc);
+             if (imc < 18.5) {
+                 System.out.println("Bajo peso");
+             } else if (imc < 25) {
+                 System.out.println("Peso normal");
+             } else if (imc < 30) {
+                 System.out.println("Sobrepeso");
+             } else {
+                 System.out.println("Obesidad");
+             }}
     }
 }
 
