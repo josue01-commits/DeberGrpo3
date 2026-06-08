@@ -12,45 +12,36 @@ import java.util.Scanner;
  */
 public class Wendy_Chasipanta {
      public static void main(String[] args) {
-         //algoritmo de un cajero basico 
+         //conversion de temperatura
+         
          try (Scanner leer = new Scanner(System.in)) {
-             double saldo = 1000;
-             int opcion;
-             double monto;
+             double celsius;
+             double fahrenheit;
+             double kelvin;
              
-             System.out.println("===== CAJERO AUTOMATICO =====");
-             System.out.println("1. Consultar saldo");
-             System.out.println("2. Depositar dinero");
-             System.out.println("3. Retirar dinero");
-             System.out.print("Seleccione una opcion: ");
-             opcion = leer.nextInt();
+             System.out.println("===== CONVERSOR DE TEMPERATURAS =====");
              
-             switch (opcion) {
-                 
-                 case 1 -> System.out.println("Su saldo actual es: $" + saldo);
-                     
-                 case 2 -> {
-                     System.out.print("Ingrese el monto que quiere depositar: ");
-                     monto = leer.nextDouble();
-                     saldo += monto;
-                     System.out.println("Nuevo saldo: $" + saldo);
-                 }
-                     
-                 case 3 -> {
-                     System.out.print("Ingrese el monto a retirar: ");
-                     monto = leer.nextDouble();
-                     
-                     if (monto <= saldo) {
-                         saldo -= monto;
-                         System.out.println("Retiro realizado.");
-                         System.out.println("Saldo restante: $" + saldo);
-                     } else {
-                         System.out.println("Fondos insuficientes.");
-                     }
-                 }
-                     
-                 default -> System.out.println("Opcion no valida.");
-             }}
-    }}
+             System.out.print("Ingrese la temperatura en grados Celsius: ");
+             celsius = leer.nextDouble();
+             
+             fahrenheit = (celsius * 9 / 5) + 32;
+             kelvin = celsius + 273.15;
+             
+             System.out.println("\nRESULTADOS");
+             System.out.println("Celsius: " + celsius + " °C");
+             System.out.println("Fahrenheit: " + fahrenheit + " °F");
+             System.out.println("Kelvin: " + kelvin + " K");
+             
+             if (celsius < 0) {
+                 System.out.println("La temperatura está bajo cero.");
+             } else if (celsius > 30) {
+                 System.out.println("La temperatura es alta.");
+             } else {
+                 System.out.println("La temperatura es moderada.");
+           }}
+    }
+}
+
+    
     
     
