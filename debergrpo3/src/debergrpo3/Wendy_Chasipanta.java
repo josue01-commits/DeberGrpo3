@@ -12,23 +12,26 @@ import java.util.Scanner;
  */
 public class Wendy_Chasipanta {
      public static void main(String[] args) {
-         //algoritmo suma de numeros pares etre el 1 y 200
+         //algoritmo que solicite un numero entero y determine si es primo
          try (Scanner leer = new Scanner(System.in)) {
-             System.out.println("SUMA DE TODOS LOS NUMEROS PARES ENTRE EL 1 Y 200");
              int numero;
-             int suma = 0;
+             int contador = 0;
              
-             for (int i = 1; i <= 200; i++) {
-                 
-                 System.out.print("Ingrese un numero: ");
-                 numero = leer.nextInt();
-                 
-                 if (numero % 2 == 0) {
-                     suma = suma + numero;
-                 }
-             }
+             System.out.println("Ingrese un numero entero: ");
+             numero = leer.nextInt();
              
-             System.out.println("La suma de los numeros pares de entre 1 y 200 es: " + suma);
+            for (int i = 1; i <= numero; i++) {
+
+            if (numero % i == 0) {
+                contador++;
+            }
+        }
+        if (contador == 2) {
+            System.out.println("El numero ingresado es primo.");
+        } else {
+            System.out.println("El numero ingresado no es primo.");
+        }
+        leer.close();
          }
     }
 }
