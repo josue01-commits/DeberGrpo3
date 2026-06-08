@@ -12,33 +12,23 @@ import java.util.Scanner;
  */
 public class Wendy_Chasipanta {
      public static void main(String[] args) {
-         System.out.println("SOLICITAR 10 NUMEROS Y VER CCUAL ES EL MAYOR Y EL MENOR");
+         //suma de numeros pares etre el 1 y 200
          try (Scanner leer = new Scanner(System.in)) {
+             System.out.println("SUMA DE TODOS LOS NUMEROS PARES ENTRE EL 1 Y 200");
              int numero;
-             int mayor = 0;
-             int menor = 0;
+             int suma = 0;
              
-             for (int i = 1; i <= 10; i++) {
+             for (int i = 1; i <= 200; i++) {
                  
-                 System.out.print("Ingrese el numero " + i + ": ");
+                 System.out.print("Ingrese un numero: ");
                  numero = leer.nextInt();
                  
-                 if (i == 1) {
-                     mayor = numero;
-                     menor = numero;
-                 }
-                 
-                 if (numero > mayor) {
-                     mayor = numero;
-                 }
-                 
-                 if (numero < menor) {
-                     menor = numero;
+                 if (numero % 2 == 0) {
+                     suma = suma + numero;
                  }
              }
              
-             System.out.println("\n El numero mayor es: " + mayor);
-             System.out.println("\n El numero menor es: " + menor);
+             System.out.println("La suma de los numeros pares de entre 1 y 200 es: " + suma);
          }
     }
 }
