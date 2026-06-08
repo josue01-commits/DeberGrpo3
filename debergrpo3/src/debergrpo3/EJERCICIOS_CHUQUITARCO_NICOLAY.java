@@ -16,7 +16,7 @@ import java.util.Scanner;
             System.out.println("5. SALIR");
             System.out.print("Seleccione una opcion: ");
             opcion = sc.nextInt();
-            switch (opcion) {
+            switch(opcion) {
                 case 1:
                     ejercicio9();
                     break;

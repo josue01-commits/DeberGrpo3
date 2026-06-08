@@ -15,14 +15,14 @@ public class KEVIN_CHINGO {
         =========================================
          MENU PRINCIPAL
         =========================================
-        1. Contar números pares e impares
+        1. Contar numeros pares e impares
         2. Registrar ventas diarias de una tienda
-        3. Contar números hasta ingresar uno negativo
+        3. Contar numeros hasta ingresar uno negativo
         4. Generar tabla de multiplicar del 1 al 20
         0. Salir
         =========================================
         """);
-         System.out.print("Seleccione una opción: ");
+         System.out.print("Seleccione una opcion: ");
          opcion = sc.nextInt();
          switch(opcion){
              case 1:
@@ -41,7 +41,7 @@ public class KEVIN_CHINGO {
                  System.out.println("programa finalizado");
              default :
                  System.out.println("opcion invalida");
-                 
+//                 
 
 }
 
@@ -53,7 +53,7 @@ public class KEVIN_CHINGO {
      int pares = 0;
      int impares = 0;
      do{
-         System.out.print("Ingrese un número (0 para terminar): ");
+         System.out.print("Ingrese un numero (0 para terminar): ");
          numero = sc.nextInt();
          
          if (numero !=0) {
@@ -64,8 +64,8 @@ public class KEVIN_CHINGO {
              
          }
      }while(numero!=0);
-     System.out.println("Cantidad de números pares: "+pares);
-     System.out.println("Cantidad de números impares: "+impares);
+     System.out.println("Cantidad de numeros pares: "+pares);
+     System.out.println("Cantidad de numeros impares: "+impares);
 
 }
 // ejercicio 6
@@ -94,7 +94,7 @@ public static void ejercicio7(){
     int numero;
     int contador = 0;
     while(true){
-        System.out.print("Ingrese un número (negativo para terminar): ");
+        System.out.print("Ingrese un numero (negativo para terminar): ");
         numero = sc.nextInt();
 
         if(numero<0)
@@ -103,7 +103,7 @@ public static void ejercicio7(){
         contador++;
         
 }
-    System.out.println("Cantidad de números ingresados: " + contador);
+    System.out.println("Cantidad de numeros ingresados: " + contador);
     
 
 }
@@ -113,7 +113,7 @@ public static void ejercicio8(){
 
     do{
 
-    System.out.print("Ingrese un número positivo: ");
+    System.out.print("Ingrese un numero positivo: ");
     num = sc.nextInt();
 
     }while(num<=0);
