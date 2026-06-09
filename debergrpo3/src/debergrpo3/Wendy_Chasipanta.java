@@ -91,6 +91,7 @@ public class Wendy_Chasipanta {
     // EJERCICIO 15
     // Verificar si un número es primo
     public static void ejercicio15() {
+        System.out.println("Alexis, Liliana, Chen");
 
         int numero;
         boolean primo = true;
