@@ -44,7 +44,7 @@ public class EJERCICIOS_DAVIDCORRALES {
         case 4:
             System.out.println("\n");
             ejercicio4();
-            break; // 
+            break; 
 
         case 5:
             System.out.println("Saliendo del programa...");
