@@ -52,6 +52,7 @@ public class Debergrpo3 {
                     System.out.println("Fin del programa");
                 default:
                     System.out.println("Opcion invalida");
+                    System.out.println("AQUI ESTUVO EL GRUPO 5");
             }
 
         } while(op != 5);
