@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Wendy_Chasipanta {
     static Scanner sc = new Scanner(System.in);
     
-        public static void menu(){
+        public static void main(String[] args) {
             // MENU DE OPCIONES
         int opcion;
         do{
@@ -34,7 +34,7 @@ public class Wendy_Chasipanta {
                 default -> System.out.println("Opcion invalida.");
             }
         } while (opcion != 4);
-        sc.close();
+        
             
         }
         
@@ -118,14 +118,6 @@ public class Wendy_Chasipanta {
         } else {
             System.out.println("El numero no es primo");
         }
-    }
-    
-    
-
-    // Menu
-    public static void main(String[] args) {
-
-        menu();
     }
 }
     
